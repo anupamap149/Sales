@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %}
+Add New Student
+{% endblock %}
+{% block content %}
+        <form action="{{ url_for('addrec') }}" method="POST">
+            <h3>Please Add the New Product Details :</h3>
+            Name<br>
+            <input type="text" name="nm" /><br>
+
+            Category<br>
+            <textarea name="category"></textarea><br>
+
+            Quantity<br>
+            <input type="text" name="quantity" /><br>
+
+            Price<br>
+            <input type="text" name="price" /><br>
+
+            <input type="submit" value="Submit" /><br>
+        </form>
+{% endblock %}
